@@ -25,8 +25,8 @@
         }
 
         .chart-container {
-            width: 90%;
-            max-width: 1000px;
+            width: 1200px;      /* Aumentei a largura do container */
+            max-width: 95%;      /* Responsivo, não ultrapassa a tela */
             margin: 20px auto;
             padding: 15px;
             background-color: white;
@@ -41,16 +41,21 @@
         }
 
         iframe {
-            width: 100%;
-            max-width: 1200px;
-            height: 800px;
+            width: 100%;        /* Ocupa toda a largura do container */
+            height: 900px;      /* Altura maior para caber o gráfico inteiro */
             border: none;
             border-radius: 8px;
         }
 
+        @media (max-width: 1200px) {
+            .chart-container {
+                width: 95%;     /* Ajusta container para telas menores */
+            }
+        }
+
         @media (max-width: 600px) {
             iframe {
-                height: 400px;
+                height: 600px;  /* Altura reduzida para telas pequenas */
             }
         }
     </style>
@@ -90,6 +95,3 @@
     </div>
 </body>
 </html>
-
-
-
