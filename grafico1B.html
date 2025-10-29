@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+
+    
+</head>
+<body >
+    <div id="8a1d5be551794c92a5c7ecfadf253350" class="chart-container" style="width:980px; height:600px; "></div>
+    <script>
+        var chart_8a1d5be551794c92a5c7ecfadf253350 = echarts.init(
+            document.getElementById('8a1d5be551794c92a5c7ecfadf253350'), 'light', {renderer: 'canvas', locale: 'ZH'});
+        var option_8a1d5be551794c92a5c7ecfadf253350 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "series": [
+        {
+            "type": "radar",
+            "name": "Global (M\u22655)",
+            "data": [
+                [
+                    740,
+                    1674,
+                    432,
+                    197,
+                    3371,
+                    3,
+                    1008
+                ]
+            ],
+            "symbol": "none",
+            "label": {
+                "show": false,
+                "margin": 8,
+                "valueAnimation": false
+            },
+            "selectedMode": false,
+            "zlevel": 0,
+            "z": 2,
+            "itemStyle": {
+                "normal": {}
+            },
+            "lineStyle": {
+                "show": true,
+                "width": 3,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid",
+                "color": "#00BFC4"
+            },
+            "areaStyle": {
+                "opacity": 0.3,
+                "color": "#00BFC4"
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Global (M\u22655)"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "radar": [
+        {
+            "indicator": [
+                {
+                    "name": "Am. Norte",
+                    "max": 3400
+                },
+                {
+                    "name": "Am. Sul",
+                    "max": 3400
+                },
+                {
+                    "name": "Europa",
+                    "max": 3400
+                },
+                {
+                    "name": "\u00c1frica",
+                    "max": 3400
+                },
+                {
+                    "name": "\u00c1sia",
+                    "max": 3400
+                },
+                {
+                    "name": "Antartica",
+                    "max": 3400
+                },
+                {
+                    "name": "Oceania",
+                    "max": 3400
+                }
+            ],
+            "shape": "polygon",
+            "startAngle": 90,
+            "name": {
+                "textStyle": {}
+            },
+            "splitLine": {
+                "show": true,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "splitArea": {
+                "show": true,
+                "areaStyle": {
+                    "opacity": 0
+                }
+            },
+            "axisLine": {
+                "show": true,
+                "onZero": true,
+                "onZeroAxisIndex": 0
+            }
+        }
+    ],
+    "title": [
+        {
+            "show": true,
+            "text": "Continentes mais afetados por sismos (Magnitude \u2265 5) \u2014 Global (2001\u20132023)",
+            "target": "blank",
+            "subtarget": "blank",
+            "left": "10",
+            "top": "10",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true
+            },
+            "dataView": {
+                "show": true,
+                "readOnly": false,
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {},
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {},
+                "icon": {}
+            }
+        }
+    },
+    "graphic": [
+        {
+            "type": "group",
+            "diffChildrenByName": false,
+            "children": [
+                {
+                    "type": "text",
+                    "$action": "merge",
+                    "rotation": 0,
+                    "left": "0",
+                    "top": 0,
+                    "bounding": "all",
+                    "z": 0,
+                    "zlevel": 0,
+                    "silent": false,
+                    "invisible": false,
+                    "ignore": false,
+                    "cursor": "pointer",
+                    "draggable": false,
+                    "progressive": false,
+                    "width": 0,
+                    "height": 0,
+                    "style": {
+                        "text": "An\u00e9is (ref.)",
+                        "x": 0,
+                        "y": 0,
+                        "fontSize": 0,
+                        "textAlign": "left"
+                    }
+                },
+                {
+                    "type": "text",
+                    "$action": "merge",
+                    "rotation": 0,
+                    "left": "0",
+                    "top": 18,
+                    "bounding": "all",
+                    "z": 0,
+                    "zlevel": 0,
+                    "silent": false,
+                    "invisible": false,
+                    "ignore": false,
+                    "cursor": "pointer",
+                    "draggable": false,
+                    "progressive": false,
+                    "width": 0,
+                    "height": 0,
+                    "style": {
+                        "text": "20%",
+                        "x": 0,
+                        "y": 0,
+                        "fontSize": 0,
+                        "textAlign": "left"
+                    }
+                },
+                {
+                    "type": "text",
+                    "$action": "merge",
+                    "rotation": 0,
+                    "left": "0",
+                    "top": 36,
+                    "bounding": "all",
+                    "z": 0,
+                    "zlevel": 0,
+                    "silent": false,
+                    "invisible": false,
+                    "ignore": false,
+                    "cursor": "pointer",
+                    "draggable": false,
+                    "progressive": false,
+                    "width": 0,
+                    "height": 0,
+                    "style": {
+                        "text": "40%",
+                        "x": 0,
+                        "y": 0,
+                        "fontSize": 0,
+                        "textAlign": "left"
+                    }
+                },
+                {
+                    "type": "text",
+                    "$action": "merge",
+                    "rotation": 0,
+                    "left": "0",
+                    "top": 54,
+                    "bounding": "all",
+                    "z": 0,
+                    "zlevel": 0,
+                    "silent": false,
+                    "invisible": false,
+                    "ignore": false,
+                    "cursor": "pointer",
+                    "draggable": false,
+                    "progressive": false,
+                    "width": 0,
+                    "height": 0,
+                    "style": {
+                        "text": "60%",
+                        "x": 0,
+                        "y": 0,
+                        "fontSize": 0,
+                        "textAlign": "left"
+                    }
+                },
+                {
+                    "type": "text",
+                    "$action": "merge",
+                    "rotation": 0,
+                    "left": "0",
+                    "top": 72,
+                    "bounding": "all",
+                    "z": 0,
+                    "zlevel": 0,
+                    "silent": false,
+                    "invisible": false,
+                    "ignore": false,
+                    "cursor": "pointer",
+                    "draggable": false,
+                    "progressive": false,
+                    "width": 0,
+                    "height": 0,
+                    "style": {
+                        "text": "80%",
+                        "x": 0,
+                        "y": 0,
+                        "fontSize": 0,
+                        "textAlign": "left"
+                    }
+                },
+                {
+                    "type": "text",
+                    "$action": "merge",
+                    "rotation": 0,
+                    "left": "0",
+                    "top": 90,
+                    "bounding": "all",
+                    "z": 0,
+                    "zlevel": 0,
+                    "silent": false,
+                    "invisible": false,
+                    "ignore": false,
+                    "cursor": "pointer",
+                    "draggable": false,
+                    "progressive": false,
+                    "width": 0,
+                    "height": 0,
+                    "style": {
+                        "text": "100%",
+                        "x": 0,
+                        "y": 0,
+                        "fontSize": 0,
+                        "textAlign": "left"
+                    }
+                }
+            ],
+            "$action": "merge",
+            "rotation": 0,
+            "right": "8%",
+            "top": "16%",
+            "bounding": "all",
+            "z": 0,
+            "zlevel": 0,
+            "silent": false,
+            "invisible": false,
+            "ignore": false,
+            "cursor": "pointer",
+            "draggable": false,
+            "progressive": false,
+            "width": 0,
+            "height": 0
+        }
+    ]
+};
+        chart_8a1d5be551794c92a5c7ecfadf253350.setOption(option_8a1d5be551794c92a5c7ecfadf253350);
+    </script>
+</body>
+</html>
